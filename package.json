@@ -11,6 +11,7 @@
     "flux": "^2.1.1",
     "history": "^1.12.5",
     "lodash": "^3.10.1",
+    "nodemon": "^1.7.1",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "react-router": "^1.0.0-rc3",
@@ -22,6 +23,7 @@
     "watch": "webpack --watch",
     "dev": "webpack-dev-server",
     "prod": "webpack -p",
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
