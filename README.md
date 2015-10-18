@@ -22,3 +22,6 @@ Go to [http://localhost:8000/webpack-dev-server](http://localhost:8080/webpack-d
 npm start
 ```
 Go to [http://localhost:8000](http://localhost:8000)
+
+### About the App
+This app uses React and the flux pattern to build a single page application.  React Router is used to perform the navigation between pages and the server.js file allows for the refresh of pages to render properly.
