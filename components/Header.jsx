@@ -19,7 +19,7 @@ class Header extends React.Component {
 
     return (
       <div>
-        <Nav pages={ this.props.pages }/>
+        <Nav />
         <header className="intro-header" style={ { backgroundImage: "url('" + hero + "')" } }>
           <div className="container">
             <div className="row">

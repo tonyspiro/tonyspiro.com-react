@@ -1,6 +1,9 @@
 // Nav.jsx
 import React from 'react';
 import { Link } from 'react-router';
+
+// Utilities
+import AppStore from '../stores/AppStore';
 import AppDispatcher from '../dispatcher/AppDispatcher';
 
 class Nav extends React.Component {
@@ -12,7 +15,9 @@ class Nav extends React.Component {
 
   render(){
     
-    let pages = this.props.pages;
+    let pages = AppStore.data.pages;
+    let globals = AppStore.data.globals;
+
     let page_link;
 
     let menu_items = pages.map(( page ) => {
@@ -44,7 +49,7 @@ class Nav extends React.Component {
               <span className="icon-bar"></span>
               <span className="icon-bar"></span>
             </button>
-            <a className="navbar-brand" target="_blank" href="https://cosmicjs.com">Cosmic JS</a>
+            <a className="navbar-brand" target="_blank" href="https://cosmicjs.com">{ globals.text.menu_title }</a>
           </div>
 
           <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
