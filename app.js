@@ -15,7 +15,7 @@ import Footer from './components/Footer';
 import Loading from './components/Loading';
 
 // Pages
-import Home from './pages/Home';
+import Blog from './pages/Blog';
 import Work from './pages/Work';
 import Default from './pages/Default';
 import NoMatch from './pages/NoMatch';
@@ -91,7 +91,9 @@ ReactDOM.render((
       <Route path="about" component={Default}/>
       <Route path="contact" component={Default}/>
       <Route path="work" component={Work}/>
-      <IndexRoute component={Home}/>
+      <Route path="/work/:slug" component={Work}/>
+      <Route path="/blog/:slug" component={Blog}/>
+      <IndexRoute component={Blog}/>
       <Route path="*" component={NoMatch}/>
     </Route>
   </Router>

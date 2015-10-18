@@ -8,6 +8,7 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 // Components
 import Header from '../components/Header';
 import WorkList from '../components/WorkList';
+import WorkSingle from '../components/WorkSingle';
 
 class Work extends React.Component{
 
@@ -28,7 +29,16 @@ class Work extends React.Component{
 
     let subheadline = _.findWhere(metafields, { key: 'subheadline' });
     page.subheadline = subheadline.value;
-    page.main_content = <WorkList />;
+    
+    if(!this.props.params.slug){
+    
+      page.main_content = <WorkList/>;
+    
+    } else {
+      
+      page.main_content = <WorkSingle slug={ this.props.params.slug }/>;
+
+    }
   
 	  return page;
 

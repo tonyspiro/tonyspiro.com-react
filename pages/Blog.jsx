@@ -8,13 +8,13 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 // Components
 import Header from '../components/Header';
 import BlogList from '../components/BlogList';
+import BlogSingle from '../components/BlogSingle';
 
-class Home extends React.Component{
+class Blog extends React.Component{
 
 	getPage(){
 
     let pages = AppStore.data.pages;
-
 		let pages_object = _.indexBy(pages, 'slug');
     let page = pages_object['home'];
 	  
@@ -28,7 +28,16 @@ class Home extends React.Component{
 
     let subheadline = _.findWhere(metafields, { key: 'subheadline' });
     page.subheadline = subheadline.value;
-    page.main_content = <BlogList />;
+    
+    if(!this.props.params.slug){
+    
+      page.main_content = <BlogList/>;
+    
+    } else {
+      
+      page.main_content = <BlogSingle slug={ this.props.params.slug }/>;
+
+    }
   
 	  return page;
 
@@ -56,4 +65,4 @@ class Home extends React.Component{
 
 }
 
-export default Home;
+export default Blog;

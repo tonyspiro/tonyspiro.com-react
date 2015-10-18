@@ -1,10 +1,18 @@
 // BlogList.jsx
 import React from 'react';
 import _ from 'lodash';
+import { Link } from 'react-router';
+
 import AppDispatcher from '../dispatcher/AppDispatcher';
 import AppStore from '../stores/AppStore';
 
 class BlogList extends React.Component{
+
+  scrollTop(){
+    $('html, body').animate({
+        scrollTop: $("#main-content").offset().top
+    }, 500);
+  }
 
   getMoreArticles(){
 
@@ -46,8 +54,8 @@ class BlogList extends React.Component{
       return (
         <div key={ 'key-' + article.slug }>
           <div className="post-preview">
-            <h2 data-_id={ article._id } key={ article._id } className="post-title pointer">
-              { article.title }
+            <h2 className="post-title pointer">
+              <Link to={ '/blog/' + article.slug } onClick={ this.scrollTop }>{ article.title }</Link>
             </h2>
             <p className="post-meta">Posted by <a href="http://tonyspiro.com" target="_blank">Tony Spiro</a> on { created }</p>
           </div>

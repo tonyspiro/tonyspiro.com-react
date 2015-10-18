@@ -1,10 +1,18 @@
 // WorkList.jsx
 import React from 'react';
 import _ from 'lodash';
+import { Link } from 'react-router';
+
 import AppDispatcher from '../dispatcher/AppDispatcher';
 import AppStore from '../stores/AppStore';
 
-class BlogList extends React.Component{
+class WorkList extends React.Component{
+
+  scrollTop(){
+    $('html, body').animate({
+        scrollTop: $("#main-content").offset().top
+    }, 500);
+  }
 
   getMoreWorkItems(){
 
@@ -46,8 +54,8 @@ class BlogList extends React.Component{
       return (
         <div key={ 'key-' + work_item.slug }>
           <div className="post-preview">
-            <h2 data-_id={ work_item._id } key={ work_item._id } className="post-title pointer">
-              { work_item.title }
+            <h2 className="post-title pointer">
+              <Link to={ '/work/' + work_item.slug } onClick={ this.scrollTop }>{ work_item.title }</Link>
             </h2>
             <p className="post-meta">Posted by <a href="http://tonyspiro.com" target="_blank">Tony Spiro</a> on { created }</p>
           </div>
@@ -65,4 +73,4 @@ class BlogList extends React.Component{
   }
 }
 
-export default BlogList;
+export default WorkList;

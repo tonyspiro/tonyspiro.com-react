@@ -8,13 +8,15 @@ import AppDispatcher from '../dispatcher/AppDispatcher';
 
 class Nav extends React.Component {
 
-  closeMobileNav(){
-    // jQuery has already been loaded
+  handleClick(){
     $('.navbar-collapse').removeClass('in');
+    $('html,body').scrollTop(0);
   }
 
   render(){
     
+    let _this = this;
+
     let pages = AppStore.data.pages;
     let globals = AppStore.data.globals;
 
@@ -34,7 +36,7 @@ class Nav extends React.Component {
 
       return (
         <li key={ 'key-' + page.slug }>
-          <Link onClick={ this.closeMobileNav() } to={ '/' + page_link }>{ page.title }</Link>
+          <Link onClick={ _this.handleClick } to={ '/' + page_link }>{ page.title }</Link>
         </li>
       );
     });
