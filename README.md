@@ -4,7 +4,7 @@ The steps I took to create this version of my blog were:
 1. Create a new bucket in [Cosmic JS](https://cosmicjs.com)
 2. Export the data out of my WP blog using the [Cosmic JS WP Export plugin](https://github.com/cosmicjs/cosmicjs-wp-export)
 3. Import the JSON file from the export into my Cosmic JS bucket
-4. Build the React App
+4. Build the React App and edit config.js to the correct bucket slug (tonyspirocom)
 
 ### Install
 ```
