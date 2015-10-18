@@ -4,7 +4,7 @@ The steps I took to create this version of my blog were:
 1. Create a new bucket in [Cosmic JS](https://cosmicjs.com)
 2. Export the data out of my WP blog using the [Cosmic JS WP Export plugin](https://github.com/cosmicjs/cosmicjs-wp-export)
 3. Import the JSON file from the export into my Cosmic JS bucket
-4. Build the React App
+4. Build the React App and edit config.js to point to the correct bucket slug (tonyspirocom)
 
 ### Install
 ```
@@ -16,7 +16,7 @@ npm install
 ```
 npm run dev
 ```
-Go to [http://localhost:8000/webpack-dev-server](http://localhost:8080/webpack-dev-server)
+Go to [http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server)
 ### Run production
 ```
 npm start
@@ -24,4 +24,4 @@ npm start
 Go to [http://localhost:8000](http://localhost:8000)
 
 ### About the App
-This app uses React and the flux pattern to build a single page application.  React Router is used to perform the navigation between pages.  When running ```npm start``` this boots a node server that allows for the pages to render properly when loaded in from a url or on page refresh.
+This app uses React and the Flux pattern to create a single page application.  React Router is used to perform the navigation between "pages".  Running ```npm start``` boots a node server that allows for the pages to render properly when loaded in from a url or on page refresh.
