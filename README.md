@@ -24,4 +24,4 @@ npm start
 Go to [http://localhost:8000](http://localhost:8000)
 
 ### About the App
-This app uses React and the flux pattern to build a single page application.  React Router is used to perform the navigation between pages and the server.js file allows for the refresh of pages to render properly.
+This app uses React and the flux pattern to build a single page application.  React Router is used to perform the navigation between pages.  When running ```npm start``` this boots a node server that allows for the pages to render properly when loaded in from a url or on page refresh.
