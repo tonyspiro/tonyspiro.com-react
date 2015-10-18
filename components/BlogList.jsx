@@ -1,4 +1,4 @@
-// ArticlesList.jsx
+// BlogList.jsx
 import React from 'react';
 import _ from 'lodash';
 import AppDispatcher from '../dispatcher/AppDispatcher';

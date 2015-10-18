@@ -1,4 +1,4 @@
-// Page.jsx
+// Blog.jsx
 import React from 'react'
 
 // Utilities

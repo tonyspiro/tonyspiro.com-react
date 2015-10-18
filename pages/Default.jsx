@@ -1,4 +1,4 @@
-// Page.jsx
+// Default.jsx
 import React from 'react'
 
 // Utilities

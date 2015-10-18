@@ -1,4 +1,4 @@
-// Header.jsx
+// Footer.jsx
 import React from 'react';
 
 class Footer extends React.Component {
