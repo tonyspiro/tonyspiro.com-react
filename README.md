@@ -1,5 +1,5 @@
 # tonyspiro.com-react
-The original tonyspiro.com is built on WordPress.  This is a repo that demonstrates how to build a portfolio blog using React.  The steps I took to create this version of my blog were:
+This is a repo that demonstrates how to build a portfolio blog using React on the Cosmic JS content platform.  The steps I took to create this version of my blog were:
 
 1. Create a new bucket in [Cosmic JS](https://cosmicjs.com)
 2. Export the data out of [my WP blog](http://tonyspiro.com) using the [Cosmic JS WP Export plugin](https://github.com/cosmicjs/cosmicjs-wp-export)
