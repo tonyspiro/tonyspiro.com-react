@@ -1,20 +1,22 @@
 # tonyspiro.com-react
 This app demonstrates how to build a portfolio blog using React on the [Cosmic JS](https://cosmicjs.com) content platform.  Using [React Router](https://github.com/rackt/react-router), Flux and Cosmic JS, pages load fast as a single-page blog application.
 
-####[View a demo here](http://spyrocklabs.com:8000/)
+### Getting started
 
-### Install
+#####[View a demo here](http://spyrocklabs.com:8000/)
+
+#####Install
 ```
 git clone https://github.com/tonyspiro/tonyspiro.com-react
 cd tonyspiro.com-react
 npm install
 ```
-### Run webpack dev
+#####Run webpack dev
 ```
 npm run dev
 ```
 Go to [http://localhost:8080/webpack-dev-server](http://localhost:8080/webpack-dev-server)
-### Run production
+#####Run production
 ```
 npm start
 ```
