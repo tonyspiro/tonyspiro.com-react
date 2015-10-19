@@ -32,5 +32,3 @@ Here are the steps that were taken to create this application:
 2. Export the data out of [my WP blog](http://tonyspiro.com) using the [Cosmic JS WP Export plugin](https://github.com/cosmicjs/cosmicjs-wp-export)
 3. Import the exported JSON file into my Cosmic JS bucket
 4. Build the React app and edit [config.js](https://github.com/tonyspiro/tonyspiro.com-react/blob/master/config.js) to point to the correct bucket in Cosmic JS
-
-### About the app
