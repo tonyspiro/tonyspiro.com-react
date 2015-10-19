@@ -21,11 +21,13 @@ npm start
 Go to [http://localhost:8000](http://localhost:8000)
 
 ### About the app
-This app uses React and the Flux pattern to create a single page application.  React Router is used to perform the navigation between "pages".  Running ```npm start``` boots a node server that allows for the pages to render properly when loaded in from a url or on page refresh.
+* This app uses React and the Flux pattern to create a single page application.  React Router is used to perform the navigation between "pages".  Running ```npm start``` boots a node server that allows for the pages to render properly when loaded in from a url or on page refresh.
 
-The [Cosmic JS browser package](https://github.com/cosmicjs/cosmicjs-browser) is used to pull the data from the Cosmic JS API into the app.
+* The [Cosmic JS browser package](https://github.com/cosmicjs/cosmicjs-browser) is used to pull the data from the Cosmic JS API into the app.
 
-[Webpack](https://webpack.github.io/) is used for the dev and build process to turn ES6 JS into browser-friendly ES5 JS using the babel-loader.  The front end style is based off [a theme from Start Bootstrap](http://startbootstrap.com/template-overviews/clean-blog/).
+* [Webpack](https://webpack.github.io/) is used for the dev and build process to turn ES6 JS into browser-friendly ES5 JS using the babel-loader.  
+
+* The front end style is based off [a theme from Start Bootstrap](http://startbootstrap.com/template-overviews/clean-blog/).
 
 ###How
 Here are the steps that were taken to create this application:
