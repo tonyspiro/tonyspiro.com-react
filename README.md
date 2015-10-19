@@ -21,7 +21,7 @@ npm start
 Go to [http://localhost:8000](http://localhost:8000)
 
 ### About the app
-This app uses React and the Flux pattern to create a single page application.  The content comes from my blog [tonyspiro.com](http://tonyspiro.com) and was imported into a bucket on Cosmic JS.  React Router is used to perform the navigation between "pages".  
+This app uses React and the Flux pattern to create a single page application.  The content comes from my blog [tonyspiro.com](http://tonyspiro.com) and was imported into a bucket on Cosmic JS. React Router is used to perform the navigation between "pages".  
 
 The [Cosmic JS browser package](https://github.com/cosmicjs/cosmicjs-browser) pulls the data from the Cosmic JS API into the app.
 
