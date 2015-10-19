@@ -1,5 +1,5 @@
 # tonyspiro.com-react
-This app demonstrates how to build a portfolio blog using React on the [Cosmic JS](https://cosmicjs.com) content platform.  [React Router](https://github.com/rackt/react-router) is used to make this a single page JavaScript application.
+This app demonstrates how to build a portfolio blog using React on the [Cosmic JS](https://cosmicjs.com) content platform.  Using [React Router](https://github.com/rackt/react-router), Flux and Cosmic JS, pages load fast as a single-page blog application.
 
 ####[View a demo here](http://spyrocklabs.com:8000/)
 
