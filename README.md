@@ -23,6 +23,8 @@ npm start
 Go to [http://localhost:8000](http://localhost:8000)
 
 ### About the app
+* My original website is [http://tonyspiro.com](tonyspiro.com) and is built on the WordPress platform.  After running benchmark tests between my WordPress site and this React / Cosmic JS version, the React version clocks in over 10x FASTER.  Where you can really tell the difference is on mobile.
+
 * This app uses React and the Flux pattern to create a single page application.  React Router is used to perform the navigation between "pages".  Running ```npm start``` boots a node server that allows for the pages to render properly when loaded in from a url or on page refresh.
 
 * The [Cosmic JS browser package](https://github.com/cosmicjs/cosmicjs-browser) is used to pull the data from the Cosmic JS API into the app.
