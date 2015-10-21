@@ -41,10 +41,10 @@ React / Cosmic JS (2.3 seconds):
 
 * The front end style is based off [a theme from Start Bootstrap](http://startbootstrap.com/template-overviews/clean-blog/).
 
-###How
-Here are the steps that were taken to create this application:
+###How I did it
+Here are the steps that were taken to build this app:
 
-1. Create a new bucket in [Cosmic JS](https://cosmicjs.com)
-2. Export the data out of [my WP blog](http://tonyspiro.com) using the [Cosmic JS WP Export plugin](https://github.com/cosmicjs/cosmicjs-wp-export)
-3. Import the exported JSON file into my Cosmic JS bucket
-4. Build the React app and edit [config.js](https://github.com/tonyspiro/tonyspiro.com-react/blob/master/config.js) to point to the correct bucket in Cosmic JS
+1. I exported the data out of [my WP blog](http://tonyspiro.com) using the [Cosmic JS WP Export plugin](https://github.com/cosmicjs/cosmicjs-wp-export).  The exported JSON file is included in this repo at  [tonyspirocom.json](https://github.com/tonyspiro/tonyspiro.com-react/blob/master/tonyspirocom.json)
+2. I created a new bucket in [Cosmic JS](https://cosmicjs.com)
+3. I then imported the JSON file into my Cosmic JS bucket
+4. I built the React app and edited [config.js](https://github.com/tonyspiro/tonyspiro.com-react/blob/master/config.js) to point to the correct bucket in Cosmic JS
