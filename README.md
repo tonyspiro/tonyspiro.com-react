@@ -33,7 +33,7 @@ React / Cosmic JS (2.3 seconds):
 
 <img src="https://cosmicjs.com/uploads/98cdafe0-77b9-11e5-bea6-3f1da2fe3a09-Screen%20Shot%202015-10-21%20at%201.03.54%20AM.png" width="300">
 
-* This app uses React and the Flux pattern to create a single page application.  React Router is used to perform the navigation between "pages".  Running ```npm start``` boots a node server that allows for the pages to render properly when loaded in from a url or on page refresh.
+* React Router is used to perform the navigation between "pages".  Running ```npm start``` boots a node server that allows for the pages to render properly when loaded in from a url or on page refresh.
 
 * The [Cosmic JS browser package](https://github.com/cosmicjs/cosmicjs-browser) is used to pull the data from the Cosmic JS API into the app.
 
