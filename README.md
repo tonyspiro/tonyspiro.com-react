@@ -33,7 +33,7 @@ React / Cosmic JS (2.3 seconds):
 
 <img src="https://cosmicjs.com/uploads/98cdafe0-77b9-11e5-bea6-3f1da2fe3a09-Screen%20Shot%202015-10-21%20at%201.03.54%20AM.png" width="300">
 
-* Similar benchmarking can be performed by running ApacheBench. ```ab -n 100 -c 10 "http://www.example.com/"```
+* Benchmarking was performed by running ApacheBench. ```ab -n 100 -c 10 "http://tonyspiro.com/"``` and ```ab -n 100 -c 10 "http://tonyspiro.com:8000/"```
 
 * React Router is used to perform the navigation between "pages".  Running ```npm start``` boots a node server that allows for the pages to render properly when loaded in from a url or on page refresh.
 
