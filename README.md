@@ -23,7 +23,7 @@ npm start
 Go to [http://localhost:8000](http://localhost:8000)
 
 ### About the app
-* My original website at [http://tonyspiro.com](tonyspiro.com) is built on the WordPress platform.  After running benchmark tests between my WordPress site and this React / Cosmic JS version, the React version clocks in over 10x FASTER to "first paint".  This is the real benefit from the React / API set up, less server overhead and faster page load times between "pages". You can really see a significant speed difference on mobile.
+* My original website at [http://tonyspiro.com](tonyspiro.com) is built on the WordPress platform.  After running benchmark tests between my WordPress site and this React / Cosmic JS version, the React version clocks in over 10x FASTER to "first paint" using ApacheBench.  This is the real benefit from the React / API set up, less server overhead and faster page load times between "pages". You can really see a significant speed difference on mobile.
 
 WordPress (26.7 seconds):
 
