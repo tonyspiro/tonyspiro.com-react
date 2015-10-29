@@ -40,7 +40,6 @@ class Blog extends React.Component{
     }
 
     return page;
-
   }
 
   render(){
@@ -62,7 +61,6 @@ class Blog extends React.Component{
       </div>
     );
   }
-
 }
 
 export default Blog;
