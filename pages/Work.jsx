@@ -15,7 +15,6 @@ class Work extends React.Component{
   getPage(){
 
     let pages = AppStore.data.pages;
-
     let pages_object = _.indexBy(pages, 'slug');
     let page = pages_object['work'];
 
