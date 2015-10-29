@@ -18,30 +18,30 @@ class Blog extends React.Component{
 		let pages_object = _.indexBy(pages, 'slug');
 		let page = pages_object['home'];
 
-    // Get page info 
-    let metafields = page.metafields;
-    let hero = _.findWhere(metafields, { key: 'hero' });
-    page.hero = 'https://cosmicjs.com/uploads/' + hero.value;
-    
-    let headline = _.findWhere(metafields, { key: 'headline' });
-    page.headline = headline.value;
+		// Get page info 
+		let metafields = page.metafields;
+		let hero = _.findWhere(metafields, { key: 'hero' });
+		page.hero = 'https://cosmicjs.com/uploads/' + hero.value;
 
-    let subheadline = _.findWhere(metafields, { key: 'subheadline' });
-    page.subheadline = subheadline.value;
-    
-    if(!this.props.params.slug){
+		let headline = _.findWhere(metafields, { key: 'headline' });
+		page.headline = headline.value;
 
-    	page.main_content = <BlogList/>;
+		let subheadline = _.findWhere(metafields, { key: 'subheadline' });
+		page.subheadline = subheadline.value;
 
-    } else {
+		if(!this.props.params.slug){
 
-    	page.main_content = <BlogSingle slug={ this.props.params.slug }/>;
+			page.main_content = <BlogList/>;
 
-    }
+		} else {
 
-    return page;
+			page.main_content = <BlogSingle slug={ this.props.params.slug }/>;
 
-  }
+		}
+
+		return page;
+
+}
   
   render(){
   	
