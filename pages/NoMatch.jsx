@@ -32,7 +32,6 @@ class Home extends React.Component{
     page.subheadline = subheadline.value;
     
     return page;
-
   }
   
   render(){
@@ -59,7 +58,6 @@ class Home extends React.Component{
       </div>
     );
   }
-
 }
 
 export default Home;
