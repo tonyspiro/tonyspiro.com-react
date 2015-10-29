@@ -1,8 +1,8 @@
 // AppDispatcher.js
 import {Dispatcher} from 'flux';
-let AppDispatcher = new Dispatcher();
-
 import AppStore from '../stores/AppStore';
+
+const AppDispatcher = new Dispatcher();
 
 // Register callback with AppDispatcher
 AppDispatcher.register((payload) => {
@@ -12,21 +12,16 @@ AppDispatcher.register((payload) => {
   switch(action) {
 
     case 'init-app':
-      
       AppStore.init(payload);
-
       break;
 
     case 'get-more-items':
-			
-			AppStore.getMoreItems();
-
+      AppStore.getMoreItems();
       break;
 
     default:
-      
       return true;
-  
+
   }
 
   return true;
