@@ -33,7 +33,6 @@ class Home extends React.Component{
     page.main_content = <div dangerouslySetInnerHTML={ {__html: page.content } }></div>;
 
     return page;
-
   }
 
   render(){
@@ -55,7 +54,6 @@ class Home extends React.Component{
       </div>
     );
   }
-
 }
 
 export default Home;
