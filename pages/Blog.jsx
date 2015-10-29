@@ -12,7 +12,7 @@ import BlogSingle from '../components/BlogSingle';
 
 class Blog extends React.Component{
 
-getPage(){
+  getPage(){
 
     let pages = AppStore.data.pages;
     let pages_object = _.indexBy(pages, 'slug');
@@ -31,35 +31,35 @@ getPage(){
 
     if(!this.props.params.slug){
 
-    page.main_content = <BlogList/>;
+      page.main_content = <BlogList/>;
 
-  } else {
+    } else {
 
-    page.main_content = <BlogSingle slug={ this.props.params.slug }/>;
+      page.main_content = <BlogSingle slug={ this.props.params.slug }/>;
+
+    }
+
+    return page;
 
   }
 
-  return page;
+  render(){
 
-}
+    let globals = AppStore.data.globals;
+    let pages = AppStore.data.pages;
+    let page = this.getPage();
 
-render(){
-
-  let globals = AppStore.data.globals;
-  let pages = AppStore.data.pages;
-  let page = this.getPage();
-
-  return (
-    <div>
-      <Header globals={ globals } pages={ pages } page={ page }/>
-      <div id="main-content" className="container">
-        <div className="row">
-          <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          { page.main_content }
+    return (
+      <div>
+        <Header globals={ globals } pages={ pages } page={ page }/>
+        <div id="main-content" className="container">
+          <div className="row">
+            <div className="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            { page.main_content }
+            </div>
           </div>
         </div>
       </div>
-    </div>
     );
   }
 
