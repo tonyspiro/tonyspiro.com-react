@@ -2,7 +2,7 @@
 import {EventEmitter} from 'events';
 import _ from 'lodash';
 import config from '../config';
-import Cosmic from 'cosmicjs-browser';
+import Cosmic from 'cosmicjs';
 
 let AppStore = _.extend({}, EventEmitter.prototype, {
 
